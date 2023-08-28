@@ -1,0 +1,107 @@
+@keyframes fadeindown {
+  0%{
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+/*컨테아너*/
+#nav_container{
+  width: 100vw;
+  height: 60px;
+  background: rgb(204,255,219);
+  background: linear-gradient(90deg, rgba(240,255,244,1) 0%, rgba(221,255,211,1) 48%, rgba(176,255,123,1) 100%);
+  position: sticky;
+  top: 0px;
+  z-index: 30;
+}
+/*실질 안내바*/
+#nav_container #nav_wraper{
+  width: 980px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+/*안내메뉴*/
+#nav_container #nav_wraper .nav_menu{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+/*메인메뉴*/
+#nav_container #nav_wraper .nav_menu .nav_mainMenu{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 17px 40px;
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+  transition: all 400ms;
+  position: relative;
+  z-index: 9;
+}
+#nav_container #nav_wraper .nav_menu .nav_mainMenu:hover{
+  color: rgb(141, 141, 141);
+}
+#nav_container #nav_wraper .nav_menu .nav_mainMenu::before{
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  width: 100%;
+  height: 100%;
+  padding: 17px 40px;
+  border-bottom: 3px solid rgba(218, 218, 218, 0);
+  z-index: 10;
+  transition: all 600ms;
+}
+#nav_container #nav_wraper .nav_menu:hover .nav_mainMenu::before{
+  border-bottom: 3px solid rgba(179, 250, 179, 0.5);
+}
+#nav_container #nav_wraper .nav_menu .nav_subMenu_wraper{
+  font-size: 16px;
+  font-weight: 400;
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  transition: all 400ms;
+  background-color: white;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  z-index: 5;
+}
+#nav_container #nav_wraper .nav_menu.sel .nav_subMenu_wraper{
+  display: flex;
+  animation: fadeindown 600ms;
+}
+#nav_container #nav_wraper .nav_menu .nav_subMenu_wraper .nav_subMenu{
+  padding: 1rem 0;
+  width: 100%;
+  color: rgb(112, 112, 112);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 400ms;
+}
+#nav_container #nav_wraper .nav_menu .nav_subMenu_wraper .nav_subMenu:hover{
+  color: rgb(17, 17, 17);
+}
+#nav_container #nav_wraper .nav_menu .nav_subMenu_wraper .nav_subMenu::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom: 2px solid rgba(159, 241, 159, 0);
+  transition: all 600ms;
+}
+#nav_container #nav_wraper .nav_menu .nav_subMenu_wraper .nav_subMenu:hover::before{
+  border-bottom: 1px solid rgb(73, 73, 73);
+}

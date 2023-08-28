@@ -1,0 +1,110 @@
+#main_container{
+  width: 100vw;
+  height: 400px;
+  background-color: black;
+}
+#main_container #main_wraper{
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#main_container .main_trailer_container{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  transition: all 800ms;
+}
+#main_container .main_trailer_container.sel{
+  visibility: visible;
+  opacity: 1;
+}
+#main_container .main_trailer_container.sel .main_trailer_mes_btn{
+  z-index: 10;
+}
+#main_container .main_trailer_container .main_trailer_wraper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 980px;
+  height: 100%;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+#main_container .main_trailer_container .main_trailer_wraper .main_trailer_shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 8rem 4rem black;
+  z-index: 1;
+}
+#main_container .main_trailer_container .main_trailer_wraper .main_trailer{
+  position: absolute;
+  width: 980px;
+  top: -118px;
+  left: 0;
+}
+
+#main_container .main_trailer_container .main_trailer_mes_main{
+  position: absolute;
+  top: 100px;
+  left: 32px;
+  font-size: 32px;
+  z-index: 1;
+}
+#main_container .main_trailer_container .main_trailer_mes_detail{
+  position: absolute;
+  top: 168px;
+  left: 32px;
+  font-size: 18px;
+  z-index: 1;
+}
+#main_container .main_trailer_container .main_trailer_mes_btn{
+  position: absolute;
+  top: 280px;
+  left: 32px;
+  border-radius: 24px;
+  border: 1px solid rgb(112, 112, 112);
+  padding: 0.2rem 1.5rem;
+  background-color: rgb(189, 189, 189);
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+  transition: all 400ms;
+  z-index: 5;
+}
+#main_container .main_trailer_container .main_trailer_mes_btn:hover{
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+#main_container #main_sel_container{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#main_container #main_sel_container .main_sel{
+  margin-right: 0.5rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: rgb(177, 177, 177);
+  transition: all 400ms;
+  cursor: pointer;
+  z-index: 5;
+}
+#main_container #main_sel_container .main_sel:hover{
+  filter: contrast(300%);
+}
+#main_container #main_sel_container .main_sel.sel{
+  background-color: rgb(117, 117, 117);
+  transform: scale(130%);
+}

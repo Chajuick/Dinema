@@ -9,7 +9,7 @@
 
 #sec_pop_container{
   width: 100vw;
-  height: 500px;
+  height: 450px;
   background-color: rgba(230, 245, 255, 0.5);
   display: flex;
   flex-direction: column;

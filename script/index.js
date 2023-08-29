@@ -15,6 +15,7 @@ const secPre = document.getElementById("sec_pop_pre")
 
 const shopSliderL = document.getElementById("sec_shop_frame_btn_left")
 const shopSliderR = document.getElementById("sec_shop_frame_btn_right")
+
 //중단 공룡이 상점 사이드바
 shopSliderR.addEventListener('click',() =>{
   if(shopSliderR.classList.contains("act")){  
@@ -22,7 +23,7 @@ shopSliderR.addEventListener('click',() =>{
     shopSliderL.classList.add("act")
     let slideN = shopSliderL.parentNode.childNodes[7].childNodes[3].getBoundingClientRect();
     let slideC = shopSliderL.parentNode.childNodes[7].getBoundingClientRect();
-    shopSliderL.parentNode.childNodes[7].style.left = -slideN.left + slideC.left - 20 + "px";
+    shopSliderL.parentNode.childNodes[7].style.left = -slideN.left + slideC.left + "px";
     shopSliderL.parentNode.childNodes[7].childNodes[7].classList.add("frameSel")
     shopSliderL.parentNode.childNodes[7].childNodes[1].classList.remove("frameSel")
   }  
@@ -31,7 +32,7 @@ shopSliderL.addEventListener('click',() =>{
   if(shopSliderL.classList.contains("act")){
     shopSliderL.classList.remove("act")    
     shopSliderR.classList.add("act")
-    shopSliderL.parentNode.childNodes[7].style.left = -20 + "px";
+    shopSliderL.parentNode.childNodes[7].style.left = 0 + "px";
     shopSliderL.parentNode.childNodes[7].childNodes[1].classList.add("frameSel")
     shopSliderL.parentNode.childNodes[7].childNodes[7].classList.remove("frameSel")
   }
@@ -107,3 +108,18 @@ secTitleSel.forEach(ss => {
     }
   })
 })
+
+//상단으로 이동
+const topbtn = document.getElementById('btnGoTop');
+const topbtnR = document.getElementById('btnGoTopR');
+
+window.addEventListener('scroll', function(){
+  if( window.scrollY > 1000 ){
+    topbtn.classList.add('show');
+  } else{
+    topbtn.classList.remove('show');
+  }
+});
+topbtnR.addEventListener('click', () => {
+  window.scrollTo({top:0, behavior:'smooth'});
+});

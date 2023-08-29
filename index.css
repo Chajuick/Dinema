@@ -11,4 +11,44 @@
 html,body{
   width: 100%;
   height: 100%;
+  background-color: rgba(231, 255, 244, 0.1);
+}
+#btnGoTop{
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  width: 100vw;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 400ms ease-in-out;
+}
+#btnGoTop > div{
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+
+}
+#btnGoTop > div > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#btnGoTop > div > a > img{
+  width: 92px;
+  transition: all 400ms ease-in-out;
+}
+#btnGoTop > div > a > img:hover{
+  filter: contrast(110%);
+}
+#btnGoTop.show{
+  opacity: 1;
+  visibility: visible;
 }

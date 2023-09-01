@@ -18,24 +18,32 @@
 <body>
   <header id="header_container">
     <figure id="header_logo_wraper">
-      <img class="header_logo_img" src="assets/logo/logo.png" alt="logo" />
+      <a href="index.html"><img class="header_logo_img" src="assets/logo/logo.png" alt="logo" /></a>
     </figure>
     <ul id="header_menu_wraper">
       <li class="header_menu">
-        <iconify-icon icon="ic:round-login" class="header_icon"></iconify-icon>
-        <p class="header_menu_text">로그인</p>
+        <a class="header_menu_text" href="login.html">
+          <iconify-icon icon="ic:round-login" class="header_icon"></iconify-icon>
+        </a>
+        <p>로그인</p>
       </li>
       <li class="header_menu">
-        <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
-        <p class="header_menu_text">회원가입</p>
+        <a class="header_menu_text" href="signup1.html">
+          <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
+        </a>
+        <p>회원가입</p>
       </li>
       <li class="header_menu">
-        <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
-        <p class="header_menu_text">MY</p>
+        <a class="header_menu_text">
+          <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
+        </a>
+        <p>MY</p>
       </li>
       <li class="header_menu">
-        <iconify-icon icon="carbon:headset" class="header_icon"></iconify-icon>
-        <p class="header_menu_text">고객센터</p>
+        <a class="header_menu_text">
+          <iconify-icon icon="carbon:headset" class="header_icon"></iconify-icon>
+        </a>
+        <p>고객센터</p>
       </li>
     </ul>
   </header>
@@ -514,5 +522,6 @@
   </div>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="script/index.js"></script>
+  <script src="script/app.js"></script>
 </body>
 </html>

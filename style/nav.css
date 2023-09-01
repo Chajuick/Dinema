@@ -12,11 +12,15 @@
 #nav_container{
   width: 100vw;
   height: 60px;
-  background: rgb(204,255,219);
-  background: linear-gradient(90deg, rgba(240,255,244,1) 0%, rgba(221,255,211,1) 48%, rgba(176,255,123,1) 100%);
+  background: white;
+  border-top: 1px solid rgb(227, 235, 228);
   position: sticky;
   top: 0px;
   z-index: 30;
+  transition: all 400ms;
+}
+#nav_container.active{
+  border: none;
 }
 /*실질 안내바*/
 #nav_container #nav_wraper{

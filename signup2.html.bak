@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link href="index.css" rel="stylesheet" />
+	<link href="style/header.css" rel="stylesheet" />
+	<link href="style/nav.css" rel="stylesheet" />
+	<link href="style/signup2.css" rel="stylesheet" />
+
+  <link href="style/footer.css" rel="stylesheet" />
+</head>
+<body>
+  <header id="header_container">
+    <figure id="header_logo_wraper">
+      <a href="index.html"><img class="header_logo_img" src="assets/logo/logo.png" alt="logo" /></a>
+    </figure>
+    <ul id="header_menu_wraper">
+      <li class="header_menu">
+        <a class="header_menu_text" href="login.html">
+          <iconify-icon icon="ic:round-login" class="header_icon"></iconify-icon>
+        </a>
+        <p>로그인</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text" href="signup1.html">
+          <iconify-icon icon="bi:person-add" class="header_icon"></iconify-icon>
+        </a>
+        <p>회원가입</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="bi:person" class="header_icon"></iconify-icon>
+        </a>
+        <p>MY</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="carbon:headset" class="header_icon"></iconify-icon>
+        </a>
+        <p>고객센터</p>
+      </li>
+    </ul>
+  </header>
+  <nav id="nav_container">
+    <ul id="nav_wraper">
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">영화</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">전체</li>
+          <li class="nav_subMenu">인기</li>
+          <li class="nav_subMenu">개봉예정</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">극장</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">위치</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">예매</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">상영시간표</li>
+          <li class="nav_subMenu">예매</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">스토어</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">패키지</li>
+          <li class="nav_subMenu">기프트카드</li>
+          <li class="nav_subMenu">굿즈</li>
+          <li class="nav_subMenu">스낵</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">이벤트</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">진행중</li>
+          <li class="nav_subMenu">종료</li>
+          <li class="nav_subMenu">당첨자발표</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="signup_info_container">
+    <div id="signup_info_wraper">
+      <iconify-icon id="signup_info_icon" icon="ep:list" style="color: rgb(109, 218, 109);" width="80" height="80"></iconify-icon>
+      <h2>회원정보 입력</h2>
+      <form name="Info" method="post" action="Info" encType="UTF-8">
+        <div id="signup_info_table">
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title" >*아이디</div>
+            <div class="signup_info_table_detail"><input type="text" minlength="4" maxlength="12" name="userID" /></div>
+            <div id="ID_err_mes">아이디를 입력해주세요</div>
+          </div>
+          <div class="signup_info_table_col_sub">
+            <div >아이디는 공백없이 4~12자까지 입력가능합니다.</div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">*비밀번호</div>
+            <div class="signup_info_table_detail"><input type="password"  minlength="8" maxlength="16" name="userPW" /></div>
+          </div>
+          <div class="signup_info_table_col_sub">
+            <div>비밀번호는 공백없이 특수기호(!,@,#,$,%,^,&) 포함 8~16자까지 입력가능합니다.</div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">*비밀번호 확인</div>
+            <div class="signup_info_table_detail"><input type="password"  minlength="8" maxlength="16" name="userPWre" /></div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">*이름</div>
+            <div class="signup_info_table_detail"><input type="text" name="userName" /></div>
+            <div id="signup_info_table_title_gender" class="signup_info_table_title">*성별</div>
+            <div class="signup_info_table_detail">
+              <label>남<input type="radio" name="userGender" value="0"/></label>
+              <label>여<input type="radio" name="userGender" value="1"/></label>
+            </div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">*생년월일</div>
+            <div class="signup_info_table_detail"><input type="text" minlength="8" maxlength="8" name="userBirth" /></div>
+          </div>
+          <div class="signup_info_table_col_sub">
+            <div>공백없이 8자리로 입력해주세요. 예&#41;1997.08.26</div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">*휴대폰 번호</div>
+            <div class="signup_info_table_detail"><input type="text" minlength="11" maxlength="11" name="userPhone" /></div>
+            <div id="signup_checkerPn"><input type="button" value="본인인증" disabled="divue"/></div>
+          </div>
+          <div class="signup_info_table_col_sub">
+            <div>공백없이 입력해주세요. 예&#41;01012345678</div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">이메일</div>
+            <div class="signup_info_table_detail"><input type="text" name="userMail_main" />&nbsp;&nbsp;&nbsp;@</div>
+            <div class="signup_info_table_detail"><input type="text" name="userMail_site" disabled="divue"/></div>
+            <div class="signup_info_table_detail">
+              <select name="userMail_site">
+                <option value="">메일을 선택해주세요</option>
+                <option>gmail.com</option>
+                <option>naver.com</option>
+                <option>daum.net</option>
+                <option>hanmail.net</option>
+                <option>nate.com</option>
+                <option>kakao.com</option>
+                <option>직접입력</option>
+             </select>
+            </div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">주소찾기</div>
+            <div class="signup_info_table_detail"><input type="text" name="userAdress_num" disabled="divue"/></div>
+            <div id="signup_checkerAdress"><input type="button" value="주소검색" /></div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">주소cd</div>
+            <div class="signup_info_table_detail"><input type="text" name="userAdress_num" disabled="divue"/></div>
+          </div>
+          <div class="signup_info_table_col_main">
+            <div class="signup_info_table_title">상세주소</div>
+            <div class="signup_info_table_detail"><input type="text" name="userAdress_num" disabled="divue"/></div>
+          </div>
+        </table>
+
+        <div class="signup_info_submit">
+          <input type="button" name="userInfoSubmit" value="제출" disabled="divue">
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+
+
+
+  <footer id="footer_container">
+    <ul id="footer_wraper">
+      <li class="footer_main">
+        <a href="#">회사소개</a>
+        <a href="#">IR</a>
+        <a href="#">채용공고</a>
+        <a href="#">광고문의</a>
+        <a href="#">약관</a>
+      </li>
+      <li class="footer_main">
+        <p>(34517)대전광역시 동구 자양동 성동로 7번길 7</p>
+        <p>대표 이사 : 차주익  사업자등록번호 : 123-45-67890  통신판매업신고번호 : 2023-대전-1234 </p>
+        <p>개인정보보호 책임자 : 차주익  대표이메일 : user@gmail.net</p>
+        <p>© DINEMA. All Rights Reserved</p>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="script/app.js"></script>
+  <script src="script/info.js"></script>
+</body>
+</html>

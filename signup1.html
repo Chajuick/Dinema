@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입-약관동의</title>
+  <link href="index.css" rel="stylesheet" />
+	<link href="style/header.css" rel="stylesheet" />
+	<link href="style/nav.css" rel="stylesheet" />
+	<link href="style/signup1.css" rel="stylesheet" />
+
+  <link href="style/footer.css" rel="stylesheet" />
+</head>
+<body>
+  <header id="header_container">
+    <figure id="header_logo_wraper">
+      <a href="index.html"><img class="header_logo_img" src="assets/logo/logo.png" alt="logo" /></a>
+    </figure>
+    <ul id="header_menu_wraper">
+      <li class="header_menu">
+        <a class="header_menu_text" href="login.html">
+          <iconify-icon icon="ic:round-login" class="header_icon"></iconify-icon>
+        </a>
+        <p>로그인</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
+        </a>
+        <p>회원가입</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
+        </a>
+        <p>MY</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="carbon:headset" class="header_icon"></iconify-icon>
+        </a>
+        <p>고객센터</p>
+      </li>
+    </ul>
+  </header>
+  <nav id="nav_container">
+    <ul id="nav_wraper">
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">영화</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">전체</li>
+          <li class="nav_subMenu">인기</li>
+          <li class="nav_subMenu">개봉예정</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">극장</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">위치</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">예매</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">상영시간표</li>
+          <li class="nav_subMenu">예매</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">스토어</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">패키지</li>
+          <li class="nav_subMenu">기프트카드</li>
+          <li class="nav_subMenu">굿즈</li>
+          <li class="nav_subMenu">스낵</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">이벤트</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">진행중</li>
+          <li class="nav_subMenu">종료</li>
+          <li class="nav_subMenu">당첨자발표</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="signup_terms_container">
+    <figure id="signup_terms_img_frame">
+      <img src="assets/ads/sign.png" >
+    </figure>
+    <div id="signup_terms_guider">
+      <img src="assets/logo/logo_text.png">
+      <span>에 오신것을 환영합니다.</span>
+    </div>
+    <p>DINEMA 회원이 되시면 이벤트 참여와 멤버쉽 할인 등<br/> 다양한 혜택을 받으실 수 있습니다.</p>
+    <p>아래 약관에 동의하고 확인을 눌러주신 뒤 회원가입이 진행됩니다.</p>
+    <p>DINEMA 회원 혜택</p>
+    <ul id="signup_terms_benefit_container">
+      <li class="signup_terms_benefit_box">
+        <h2 class="signup_terms_benefit_title">기본 적립</h2>
+        <ul class="signup_terms_benefit_list">
+          <li class="signup_terms_benefit_detail">유료 영화관람 금액의 5% 적립</li>
+          <li class="signup_terms_benefit_detail">스토어 결제 금액의 최대 10% 적립</li>
+        </ul>
+      </li>
+      <li class="signup_terms_benefit_box">
+        <h2 class="signup_terms_benefit_title">제휴 할인</h2>
+        <ul class="signup_terms_benefit_list">
+          <li class="signup_terms_benefit_detail">제휴사 결제 금액 1 ~ 5% 적립</li>
+        </ul>
+      </li>
+      <li class="signup_terms_benefit_box">
+        <h2 class="signup_terms_benefit_title">포인트 사용 단위</h2>
+        <ul class="signup_terms_benefit_list">
+          <li class="signup_terms_benefit_detail">할인 상품, 패키지 상품 적립 제외</li>
+          <li class="signup_terms_benefit_detail">사용 단위<br/>-온라인 : 10P<br/>-오프라인 : 500P</li>
+        </ul>
+      </li>
+    </ul>
+    <div id="signup_terms_agree_container" >
+      <form name="Terms" method="get" action="Terms" enctype="UTF-8">
+        <div class="signup_terms_agree_box">
+          <h3 class="signup_terms_agree_title">DINEMA 이용약관 동의 <span>(필수)</span></h3>
+          <div class="signup_terms_agree_detail" scroll=auto style="overflow-x:hidden">
+            <b>제1조(입  장)</b><br/>관객은 입장권으로 지정일, 지정회에 한하여 입장할 수 있습니다.  다만, 영화시작 당시 좌석에 여유가 있는 경우 영화상영업자는 좌석의 한도내에서 지정일, 지정회가 아니더라도 관객이 요청한 순서에 따라 입장을 허용할 수 있습니다.<br/><br/>
+<b>제2조(변  경)</b><br/>지정일․지정회의 변경을 희망하는 관객은 영화상영시작 20분전까지 직접 방문하거나 전화로 변경 절차를 밟아 주십시오.<br/>
+단, 미리 수령한 예매권을 소지한 경우 입장권과 교환하여야 유효합니다.<br/><br/>
+<b>제3조(현금환급)</b><br/>
+① 입장권의 환급은 입장권에 기재된 시간을 기준으로 관객의 요청에 따라 다음과 같이 합니다.<br/>
+1. 당해 영화상영 시작전 20분까지 요청한 경우에는 입장권 요금의 전액<br/>
+2. 당해 영화상영 시작전 20분에서부터 시작시까지 요청한 경우에는 입장권 요금의 50%<br/>
+3. 당해 영화상영 시작후 에는 환급요청을 할 수 없습니다.<br/>
+② 제1항에 있어서 해당일전 환급은 관객이 예매한 곳에서 가능하고, 이 경우 환급요청을 받은 날부터 48시간 이내에 환급하며 단, 공휴일인 경우는 익일 처리합니다.  그리고 해당일인 경우는 영화상영관 매표소에서 즉시 환급합니다<br/>
+③ 제1항 또는 제2항의 규정을 적용함에 있어서 입장권에 영화상영시간이 기재되지 아니한 경우에는 신문에 기재된 시간과 영화상영관 매표소에 기재된 시간 중 늦은 시간을 기준으로 합니다.<br/><br/>
+<b>제4조(영화상영지체, 중단시의 입장권 환급)</b><br/>영화상영업자는 다음의 사유가 발생하는 경우 관객의 요청에 따라 각각 정한 금액으로 입장권을 환급합니다.  다만, 관객이 환급을 요청하지 아니하고 관람을 계속하는 경우에는 그러하지 아니합니다.<br/>  
+1. 영화상영 시작이 영화상영업자의 고의 또는 과실로 입장권에 기재된 예정시간보다 30분이상 늦어지는 경우에는 입장권요금, 1시간이상 늦어지는 경우에는 입장권 요금의 2배<br/>
+2. 영화상영중 10분 이상 또는 2회 이상 중단된 경우에는 입장권 요금, 30분이상 또는 3회 이상 중단된 경우에는 입장권 요금의 2배<br/><br/>
+<b>제5조(전화․인터넷 등에 의한 예약의 효력)</b><br/>전화나 인터넷 등을 통하여 영화관람을 예약한 경우에는 당해 영화상영의 시작 전 20분전까지 입장권을 구입하여야 합니다.  그러하지 않을 경우 그 예약을 무효로 합니다.
+          </div>
+          <div class="signup_terms_agree_checkbox_wraper">
+            <label>동의<input class="signup_terms_agree_checkbox normalAgree_box" type="checkbox" name="termsOfService" /></label> 
+          </div>
+        </div>
+      <div class="signup_terms_agree_box">
+        <h3 class="signup_terms_agree_title">개인정보 수집/이용 동의 <span>(필수)</span></h3>
+        <div class="signup_terms_agree_detail" scroll=auto style="overflow-x:hidden">
+          <b>1. 개인정보의 수집항목 및 수집방법</b><br/>
+DINEMA에서는 기본적인 회원 서비스 제공을 위한 필수정보로 실명인증정보와 가입정보로 구분하여 다음의 정보를 수집하고 있습니다. 필수정보를 입력해주셔야 회원 서비스 이용이 가능합니다.<br/>
+가. 수집하는 개인정보의 항목<br/> 
+* 수집하는 필수항목<br/>
+- 실명인증정보 : 이름, 휴대전화번호, 본인 인증 또는 I-PIN(개인식별번호), GPKI<br/>
+- 가입정보 : 아이디, 비밀번호, 성명, 이메일, 전화번호, 휴대전화번호<br/>
+* 선택항목<br/>
+- 주소<br/>
+[컴퓨터에 의해 자동으로 수집되는 정보]<br/>
+인터넷 서비스 이용과정에서 아래 개인정보 항목이 자동으로 생성되어 수집될 수 있습니다.<br/>
+- IP주소, 서비스 이용기록, 방문기록 등<br/>
+나. 개인정보 수집방법<br/>
+홈페이지 회원가입을 통한 수집<br/><br/>
+<b>2. 개인정보의 수집/이용 목적 및 보유/이용 기간</b><br/>
+통계청 나라통계사이트에서는 정보주체의 회원 가입일로부터 서비스를 제공하는 기간 동안에 한하여 통계청 나라통계사이트 서비스를 이용하기 위한 최소한의 개인정보를 보유 및 이용 하게 됩니다. 회원가입 등을 통해 개인정보의 수집·이용, 제공 등에 대해 동의하신 내용은 언제든지 철회하실 수 있습니다. 회원 탈퇴를 요청하거나 수집/이용목적을 달성하거나 보유/이용기간이 종료한 경우, 사업 폐지 등의 사유발생시 개인 정보를 지체 없이 파기합니다.<br/>
+* 실명인증정보<br/>
+- 개인정보 수집항목 : 이름, 휴대폰 본인 인증 또는 I-PIN(개인식별번호), GPKI<br/>
+- 개인정보의 수집·이용목적   : 홈페이지 이용에 따른 본인 식별/인증절차에 이용<br/>
+- 개인정보의 보유 및 이용기간 : I-PIN / GPKI는 별도로 저장하지 않으며 실명인증용으로만 이용<br/>
+ * 가입정보<br/>
+- 개인정보 수집항목 : 아이디, 비밀번호, 성명, 이메일, 전화번호, 휴대전환번호, 기관명<br/>
+- 개인정보의 수집·이용목적 : 홈페이지 서비스 이용 및 회원관리, 불량회원의 부정 이용방지, 민원신청 및 처리 등<br/>
+- 개인정보의 보유 및 이용기간 : 2년 또는 회원탈퇴시<br/>
+정보주체는 개인정보의 수집·이용목적에 대한 동의를 거부할 수 있으며, 동의 거부시 통계청 나라통계사이트에 회원가입이 되지 않으며, 통계청 나라통계사이트에서 제공하는 서비스를 이용할 수 없습니다.<br/>
+3. 수집한 개인정보 제3자 제공<br/>
+통계청 나라통계사이트에서는 정보주체의 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.<br/><br/>
+<b>4. 개인정보 처리업무 안내</b><br/>
+통계청 나라통계사이트에서는 개인정보의 취급위탁은 하지 않고 있으며, 원활한 서비스 제공을 위해 아래의 기관을 통한 실명인증 및 공공 I-PIN, GPKI 인증을 하고 있습니다. <br/>
+* 수탁업체<br/>
+- SCI서울신용평가정보(주)<br/>
+· 위탁업무 내용 : 실명확인<br/>
+· 개인정보 보유 및 이용 기간 : 신용평가 기관에서는 이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음<br/>
+- 행정자치부<br/>
+· 위탁업무 내용 : 공공 I-PIN, GPKI 인증<br/>
+· 개인정보 보유 및 이용 기간 : 행정자치부에서는 이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음<br/>
+        </div>
+        <div class="signup_terms_agree_checkbox_wraper">
+          <label>동의<input class="signup_terms_agree_checkbox normalAgree_box"type="checkbox" name="privacyPolicy"/></label>
+        </div>
+      </div>
+
+        <div class="signup_terms_agree_box">
+          <h3 class="signup_terms_agree_title">프로모션 정보 수신 동의</h3>
+          <div class="signup_terms_agree_detail" scroll=auto style="overflow-x:hidden">
+            <b>DINEMA에서 제공하는 프로모션 정보를 이메일로 받아보실 수 있습니다.</b><br/><br/>
+            <b>1. 수집 및 이용 목적</b><br/>
+            - 이벤트/혜택 등 다양한 프로모션 정보 발송<br/><br/>
+            <b>2. 수집 및 이용하는 개인정보 항목</b><br/>
+            - 이메일, 직업유형, 닉네임 또는 이름<br/>
+            <b>3. 개인 정보 보유 및 이용 기간</b><br/>
+            - [약관동의] 또는 [마이페이지 내 수신동의 설정]에서 철회 시<br/>
+            - 프로모션 정보 수신동의를 통해 발송된 메일에서 수신 거부 시<br/>
+            - 회원 탈퇴 시 삭제<br/><br/>
+            위 동의를 거부할 권리가 있으며, 동의를 거부하실 경우 해당 목적의 서비스 이용이 제한될 수 있습니다.<br/>
+          </div>
+          <div class="signup_terms_agree_checkbox_wraper">
+            <label>동의<input class="signup_terms_agree_checkbox normalAgree_box" type="checkbox" name="allowPromotions"/></label>
+          </div>
+        <div id="signup_terms_agree_all">
+          <label id="signup_terms_agree_all_label">위 항목 전체에 동의합니다<input id="allAgree_box" class="signup_terms_agree_checkbox" type="checkbox" name="agree" /></label>
+        </div>
+        <div id="agreeBTN_wraper">
+          <input id="nextBTN" type="button" value="다음" onclick="location.href='signup2.html'" disabled="true">
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <footer id="footer_container">
+    <ul id="footer_wraper">
+      <li class="footer_main">
+        <a href="#">회사소개</a>
+        <a href="#">IR</a>
+        <a href="#">채용공고</a>
+        <a href="#">광고문의</a>
+        <a href="#">약관</a>
+      </li>
+      <li class="footer_main">
+        <p>(34517)대전광역시 동구 자양동 성동로 7번길 7</p>
+        <p>대표 이사 : 차주익  사업자등록번호 : 123-45-67890  통신판매업신고번호 : 2023-대전-1234 </p>
+        <p>개인정보보호 책임자 : 차주익  대표이메일 : user@gmail.net</p>
+        <p>© DINEMA. All Rights Reserved</p>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="script/app.js"></script>
+  <script src="script/terms.js"></script>
+</body>
+</html>

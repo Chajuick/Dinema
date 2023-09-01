@@ -1,5 +1,3 @@
-const navSel = document.querySelectorAll(".nav_menu")
-
 const mainSel = document.querySelectorAll(".main_sel")
 const s1 = document.querySelectorAll(".s1")
 const s2 = document.querySelectorAll(".s2")
@@ -16,6 +14,9 @@ const secPre = document.getElementById("sec_pop_pre")
 const shopSliderL = document.getElementById("sec_shop_frame_btn_left")
 const shopSliderR = document.getElementById("sec_shop_frame_btn_right")
 
+
+
+  
 //중단 공룡이 상점 사이드바
 shopSliderR.addEventListener('click',() =>{
   if(shopSliderR.classList.contains("act")){  
@@ -38,17 +39,6 @@ shopSliderL.addEventListener('click',() =>{
   }
 })
 
-
-
-//상단 nav바 sublist 
-navSel.forEach(ns => {
-  ns.addEventListener('mouseover',() => {
-    ns.classList.add('sel')
-  })
-  ns.addEventListener('mouseout',() => {
-    ns.classList.remove('sel')
-  })
-})
 //메인 프리뷰 페이지
 mainSel.forEach(ms => {
   ms.addEventListener('click',() => {

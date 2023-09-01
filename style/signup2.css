@@ -1,0 +1,257 @@
+#signup_info_container{
+  width: 100vw;
+}
+#signup_info_container #signup_info_wraper{
+  width: 980px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*타이틀*/
+#signup_info_container #signup_info_wraper > h2{
+  font-size: 28px;
+  color: rgb(69, 142, 69);
+}
+/*타이틀 부가 설명*/
+#signup_info_container #signup_info_wraper > p{
+  padding-top: 0.5rem;
+  font-size: 14px;
+  color: rgb(19, 157, 19);
+}
+/*회원정보 기입란*/
+#signup_info_table{
+  padding-top: 2rem;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgb(177, 212, 185);
+}
+/*회원정보 기입 행*/
+#signup_info_table .signup_info_table_col_main{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+/*회원정보 기입 행 부가설명*/
+#signup_info_table .signup_info_table_col_sub{
+  padding-bottom: 0.75rem;
+  font-size: 13px;
+  color: rgb(118, 118, 118);
+}
+/*회원정보 기입 행 제목*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_title{
+  width: 9rem;
+}
+/*회원정보 기입 행 제목 - 성별*/
+#signup_info_table .signup_info_table_col_main #signup_info_table_title_gender{
+  width: 4rem;
+}
+/*회원정보 기입 행 @*/
+#signup_info_table .signup_info_table_col_main > span{
+  margin-right: 0.8rem;
+}
+/*회원정보 기입 행 프레임*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail{
+  margin-right: 0.4rem;
+}
+/*회원정보 기입 행 */
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > select{
+  height: 2rem;
+  width: 11rem;
+  border-radius: 8px;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(182, 182, 182);
+  padding: 0.1rem 1rem;
+}
+/*회원정보 기입 행 포커스*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > select:focus{
+  box-shadow: 0 0 2px black;
+  outline-style: none;
+}
+/*회원정보 기입 행 기입란*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > input{
+  margin-right: 0.4rem;
+  height: 2rem;
+  width: 16rem;
+  border-radius: 8px;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(182, 182, 182);
+  padding: 0.1rem 1rem;
+}
+/*회원정보 기입 행 기입란 포커스*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > input:focus{
+  box-shadow: 0 0 2px black;
+  outline-style: none;
+}
+/*회원정보 기입 행 기입란 - 메일*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > input.mail{
+  width: 11rem;
+}
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail:nth-child(2) > input.mail{
+  margin-left: 1rem;
+}
+
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > input#inputAdressNum{
+  width: 6rem;
+}
+/*회원정보 기입 행 기입란 - 이름*/
+#signup_info_table .signup_info_table_col_main .signup_info_table_detail > input#inputName{
+  width: 8rem;
+  margin-right: 8.4rem;
+}
+/*아이디 상태확인 프레임*/
+#ID_err_mes{
+  margin-left: 0.4rem;
+  font-size: 14px;
+  color: rgb(188, 188, 188);
+  width: 12rem;
+}
+/*비밀번호 상태확인 프레임*/
+#Pw_err_mes{
+  margin-left: 0.4rem;
+  font-size: 14px;
+  color: rgb(188, 188, 188);
+  width: 12rem;
+}
+/*비밀번호확인 상태확인 프레임*/
+#PwRe_err_mes{
+  margin-left: 0.4rem;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  width: 12rem;
+}
+/*메일 상태확인 프레임*/
+#Mail_err_mes{
+  margin-left: 0.4rem;
+  font-size: 14px;
+  color: rgb(188, 188, 188);
+  width: 12rem;
+}
+/*아이디 중복확인*/
+#signup_checkerId > input{
+  height: 1.8rem;
+  width: 4.5rem;
+  border-radius: 4px;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  color: rgb(134, 134, 134);
+  transition: all 400ms;
+}
+/*아이디 중복확인 활성화*/
+#signup_checkerId > input.act{
+  color: white;
+  background-color: rgb(114, 222, 128);
+}
+/*아이디 중복확인 활성화 호버*/
+#signup_checkerId > input.act:hover{
+  background-color: rgb(57, 136, 82);
+  cursor: pointer;
+}
+/*필수요소*/
+.must{
+  color: rgb(19, 157, 19);
+  font-weight: bold;
+}
+#signup_info_table_radio_gender > input{
+  vertical-align: middle;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin: 0 0.5rem;
+  transition: all 400ms;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid gray;
+  background-color: white;
+}
+#signup_info_table_radio_gender > input::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  z-index: 1;
+  background-color: white;
+  transition: all 400ms;
+}
+#signup_info_table_radio_gender > input:checked::before{
+  background-color: rgb(23, 182, 23);
+  border-radius: 50%;
+}
+#signup_checkerPn > input{
+  height: 1.8rem;
+  width: 4.5rem;
+  border-radius: 4px;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  color: rgb(134, 134, 134);
+  transition: all 400ms;
+}
+#signup_checkerPn > input.act{
+  color: white;
+  background-color: rgb(114, 222, 128);
+}
+#signup_checkerPn > input.act:hover{
+  background-color: rgb(57, 136, 82);
+  cursor: pointer;
+}
+#signup_checkerAdress > input{
+  height: 1.8rem;
+  width: 4.5rem;
+  border-radius: 4px;
+  background-color: rgb(114, 222, 128);
+  border: none;
+  color: rgb(255, 255, 255);
+  transition: all 400ms;
+}
+#signup_checkerAdress > input:hover{
+  background-color: rgb(57, 136, 82);
+  cursor: pointer;
+}
+.signup_info_submit{
+  display: flex;
+  justify-content: right;
+}
+.signup_info_submit > input{
+  margin: 2rem 1rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  color: rgb(134, 134, 134);
+  border-radius: 4px;
+}
+
+#checkerMail{
+  margin-left: 0.4rem;
+  height: 1.8rem;
+  width: 4.5rem;
+  border-radius: 4px;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  color: rgb(134, 134, 134);
+  transition: all 400ms;
+}
+#checkerMail.act{
+  color: white;
+  background-color: rgb(114, 222, 128);
+}
+#checkerMail.act:hover{
+  background-color: rgb(57, 136, 82);
+  cursor: pointer;
+}
+
+.signup_info_submit > input.act{
+  color: white;
+  background-color: rgb(92, 175, 103);
+}
+.signup_info_submit > input.act:hover{
+  background-color: rgb(66, 129, 75);
+}
+

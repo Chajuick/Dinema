@@ -1,0 +1,203 @@
+#signup_terms_container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#signup_terms_container #signup_terms_img_frame{
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#signup_terms_container #signup_terms_img_frame > img{
+  width: 400px;
+  margin: 6rem 0 2rem 0;
+}
+#signup_terms_container #signup_terms_guider {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+#signup_terms_container #signup_terms_guider > img{
+  height: 34px;
+}
+#signup_terms_container #signup_terms_guider > span{
+  font-size: 34px;
+  color: #9ABDFF;
+}
+#signup_terms_container > p:nth-child(3){
+  font-size: 16px;
+  color: rgb(103, 103, 103);
+  text-align: center;
+}
+#signup_terms_container > p:nth-child(4){
+  font-size: 16px;
+  color: rgb(103, 103, 103);
+  padding-bottom: 3rem;
+}
+#signup_terms_container > p:nth-child(5){
+  width: 980px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+#signup_terms_container #signup_terms_benefit_container{
+  padding-top: 1rem;
+  width: 980px;
+  margin: 1rem auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#signup_terms_container #signup_terms_benefit_container .signup_terms_benefit_box{
+  width: calc(100% / 3.3);
+  box-shadow: 0 0 0.25em rgb(81, 104, 88);
+  border-radius: 4px;
+  padding-bottom: 1rem;
+}
+#signup_terms_container #signup_terms_benefit_container .signup_terms_benefit_box .signup_terms_benefit_title{
+  color: gray;
+  font-size: 16px;
+  margin: 0.5rem 0.75rem 0.25rem 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+#signup_terms_container #signup_terms_benefit_container .signup_terms_benefit_box .signup_terms_benefit_list{
+  list-style: disc;
+  margin: 0.5rem 0.75rem 0.25rem 2rem;
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+}
+#signup_terms_container #signup_terms_benefit_container .signup_terms_benefit_box .signup_terms_benefit_list .signup_terms_benefit_detail{
+  margin-bottom: 0.25rem;
+}
+#signup_terms_container #signup_terms_agree_container{
+  width: 980px;
+  margin: 2rem auto;
+}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box{}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box .signup_terms_agree_title{
+  margin-bottom: 0.5rem;
+}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box .signup_terms_agree_title > span{
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d6adb;
+  text-align: center;
+}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box .signup_terms_agree_detail{
+  width: 980px;
+  height: 200px;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 0.25rem;
+  font-size: 13px;
+  color: rgb(62, 62, 62);
+}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box .signup_terms_agree_checkbox_wraper{
+  display: flex;
+  justify-content: right;
+  margin: 0.5rem 0;
+}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box .signup_terms_agree_checkbox_wraper > label{
+  padding-left: 1rem;
+}
+.signup_terms_agree_checkbox{
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  appearance: none;
+  border: 1px solid gray;
+  border-radius: 0%;
+  width: 1em;
+  height: 1em;
+  transition: all 400ms;
+  position: relative;
+  border-radius: 2px;
+}
+.signup_terms_agree_checkbox:hover{
+  box-shadow: 0 0 0.15em rgb(134, 134, 134);
+}
+.signup_terms_agree_checkbox::before{
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 55%;
+  left: 10%;
+  transform:rotate(40deg);
+  transition: all 400ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.signup_terms_agree_checkbox::after{
+  content: "";
+  position: absolute;
+  width: 82%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 44%;
+  left: 25%;
+  transform:rotate(-65deg);
+  transition: all 400ms;
+  visibility: hidden;
+  opacity: 0;
+}
+#signup_terms_container #signup_terms_agree_container .signup_terms_agree_box .signup_terms_agree_checkbox_wraper > label:first-child .signup_terms_agree_checkbox:checked{
+  background-color: rgba(51, 220, 51, 0.5);
+}
+.signup_terms_agree_checkbox:checked:before{
+  visibility: visible;
+  opacity: 1;
+}
+.signup_terms_agree_checkbox:checked:after{
+  visibility: visible;
+  opacity: 1;
+}
+#signup_terms_agree_all{
+  display: flex;
+  justify-content: right;
+  padding: 1rem 0;
+  border-top: 1px dashed rgb(198, 198, 198);
+  margin-top: 2rem;
+}
+#signup_terms_agree_all_label > input{
+  vertical-align: center;
+  margin-left: 0.5rem;
+  appearance: none;
+  border: 1px solid gray;
+  border-radius: 0%;
+  width: 1em;
+  height: 1em;
+  transition: all 400ms;
+  border-radius: 2px;
+}
+#signup_terms_agree_all_label > input:checked{
+  background-color: rgba(51, 220, 51, 0.5);
+}
+#agreeBTN_wraper{
+  display: flex;
+  justify-content: right;
+}
+#nextBTN{
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(73, 205, 73);
+  color: white;
+  transition: all 400ms;
+  filter: grayscale(100%);
+}
+#nextBTN.active:hover{
+  background-color: rgb(51, 146, 51);
+  cursor: pointer;
+}
+#nextBTN.active{
+  filter: none;
+}

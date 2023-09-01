@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link href="index.css" rel="stylesheet" />
+	<link href="style/header.css" rel="stylesheet" />
+	<link href="style/nav.css" rel="stylesheet" />
+	<link href="style/login.css" rel="stylesheet" />
+
+  <link href="style/footer.css" rel="stylesheet" />
+</head>
+<body>
+  <header id="header_container">
+    <figure id="header_logo_wraper">
+      <a href="index.html"><img class="header_logo_img" src="assets/logo/logo.png" alt="logo" /></a>
+    </figure>
+    <ul id="header_menu_wraper">
+      <li class="header_menu">
+        <a class="header_menu_text" href="login.html">
+          <iconify-icon icon="ic:round-login" class="header_icon"></iconify-icon>
+        </a>
+        <p>로그인</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text" href="signup1.html">
+          <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
+        </a>
+        <p>회원가입</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="pajamas:user" class="header_icon"></iconify-icon>
+        </a>
+        <p>MY</p>
+      </li>
+      <li class="header_menu">
+        <a class="header_menu_text">
+          <iconify-icon icon="carbon:headset" class="header_icon"></iconify-icon>
+        </a>
+        <p>고객센터</p>
+      </li>
+    </ul>
+  </header>
+  <nav id="nav_container">
+    <ul id="nav_wraper">
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">영화</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">전체</li>
+          <li class="nav_subMenu">인기</li>
+          <li class="nav_subMenu">개봉예정</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">극장</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">위치</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">예매</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">상영시간표</li>
+          <li class="nav_subMenu">예매</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">스토어</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">패키지</li>
+          <li class="nav_subMenu">기프트카드</li>
+          <li class="nav_subMenu">굿즈</li>
+          <li class="nav_subMenu">스낵</li>
+        </ul>
+      </li>
+      <li class="nav_menu">
+        <a href="#" class="nav_mainMenu">이벤트</a>
+        <ul class="nav_subMenu_wraper">
+          <li class="nav_subMenu">진행중</li>
+          <li class="nav_subMenu">종료</li>
+          <li class="nav_subMenu">당첨자발표</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+	<main id="login_container">
+    <div id="login_wraper">
+      <ul class="login_list">
+        <li id="login_list_login" class="login_list_box">
+          <button class="login_list_guider">로그인</button>
+          <div class="login_list_box_container">
+            <p>아이디와 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</p>
+            <form name="Login" method="post" action="Login" encType="UTF-8">
+              <label><input id="loginID" class="loginbox" type="text" name="userId" placeholder="아이디"/> </label>
+              <br />
+              <label><input id="loginPW" class="loginbox" type="password" name="userPw" placeholder="비밀번호"/></label>
+              <br />
+              <input id="loginBTN" class="loginbox" type="button" value="로그인" onClick="loginValidate()">
+              <input type="hidden" name="useraddress" value="경기도 성님시 분당구"/>
+            </form>
+            <div class="login_list_footer">
+				      <span>아이디가 없으신가요?</span>
+				      <a href="signup1.html">회원가입</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+
+
+
+  <footer id="footer_container">
+    <ul id="footer_wraper">
+      <li class="footer_main">
+        <a href="#">회사소개</a>
+        <a href="#">IR</a>
+        <a href="#">채용공고</a>
+        <a href="#">광고문의</a>
+        <a href="#">약관</a>
+      </li>
+      <li class="footer_main">
+        <p>(34517)대전광역시 동구 자양동 성동로 7번길 7</p>
+        <p>대표 이사 : 차주익  사업자등록번호 : 123-45-67890  통신판매업신고번호 : 2023-대전-1234 </p>
+        <p>개인정보보호 책임자 : 차주익  대표이메일 : user@gmail.net</p>
+        <p>© DINEMA. All Rights Reserved</p>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="script/app.js"></script>
+  <script>
+	function loginValidate() {
+		var formLogin = document.Login;
+		var userId = formLogin.userId.value;
+		var userPw = formLogin.userPw.value;
+		
+		if (userId.length == 0 || userId == ""){
+			if (userPw.length == 0 || userPw == ""){
+				alert("아이디와 비밀번호를 입력하세요!");
+				return;
+			} else {
+				alert("아이디를 입력하세요!");
+				return;
+			}
+		} else if (userPw.length == 0 || userPw == ""){
+			alert("비밀번호를 입력하세요!");
+			return;
+		}
+		formLogin.submit();
+	}
+</script>
+</body>
+</html>
